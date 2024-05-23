@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .timetable {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 18px;
+      text-align: left;
+    }
+    .timetable th, .timetable td {
+      padding: 12px;
+      border: 1px solid #ddd;
+    }
+    .timetable th {
+      background-color: #f4f4f4;
+    }
+    .timetable td {
+      background-color: #fafafa;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .btn-secondary {
+      background-color: #6c757d;
+    }
+    .btn-primary:hover, .btn-secondary:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <h2 class="section-title">Timetable for Online Classes</h2>
+        <p>Find the schedule for our Math, Science, and Biology online classes below. You can also download the timetable for offline access.</p>
+        
+        <!-- Timetable -->
+        <table class="timetable">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Subject</th>
+              <th>Class Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>10:00 AM - 11:00 AM</td>
+              <td>Advanced Math</td>
+              <td><a href="https://zoom.us/j/1234567890" target="_blank">Join Class</a></td>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>11:30 AM - 12:30 PM</td>
+              <td>Biology</td>
+              <td><a href="https://zoom.us/j/1234567891" target="_blank">Join Class</a></td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10:00 AM - 11:00 AM</td>
+              <td>Physics</td>
+              <td><a href="https://zoom.us/j/1234567892" target="_blank">Join Class</a></td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>10:00 AM - 11:00 AM</td>
+              <td>Advanced Math</td>
+              <td><a href="https://zoom.us/j/1234567893" target="_blank">Join Class</a></td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>11:30 AM - 12:30 PM</td>
+              <td>Biology</td>
+              <td><a href="https://zoom.us/j/1234567894" target="_blank">Join Class</a></td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>10:00 AM - 11:00 AM</td>
+              <td>Physics</td>
+              <td><a href="https://zoom.us/j/1234567895" target="_blank">Join Class</a></td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>10:00 AM - 11:00 AM</td>
+              <td>Advanced Math</td>
+              <td><a href="https://zoom.us/j/1234567896" target="_blank">Join Class</a></td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>11:30 AM - 12:30 PM</td>
+              <td>Biology</td>
+              <td><a href="https://zoom.us/j/1234567897" target="_blank">Join Class</a></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <!-- Download and View Buttons -->
+        <a href="timetable.pdf" class="btn btn-primary" download="Timetable.pdf">Download Timetable PDF</a>
+        <a href="timetable.pdf" class="btn btn-secondary" target="_blank">View Timetable</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
