@@ -3,6 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="learnIQ/website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="School-" content="LearnIQ" />
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="author" content="learniq">
+  <meta name="create" content="Kgomotso LN">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <title>Timetable</title>
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -45,82 +73,105 @@
 </head>
 <body>
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center mb-4">
-        <h2 class="section-title">Timetable for Online Classes</h2>
-        <p>Find the schedule for our Math, Science, and Biology online classes below. You can also download the timetable for offline access.</p>
-        
-        <!-- Timetable -->
-        <table class="timetable">
-          <thead>
-            <tr>
-              <th>Day</th>
-              <th>Time</th>
-              <th>Subject</th>
-              <th>Class Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Monday</td>
-              <td>10:00 AM - 11:00 AM</td>
-              <td>Advanced Math</td>
-              <td><a href="https://zoom.us/j/1234567890" target="_blank">Join Class</a></td>
-            </tr>
-            <tr>
-              <td>Monday</td>
-              <td>11:30 AM - 12:30 PM</td>
-              <td>Biology</td>
-              <td><a href="https://zoom.us/j/1234567891" target="_blank">Join Class</a></td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>10:00 AM - 11:00 AM</td>
-              <td>Physics</td>
-              <td><a href="https://zoom.us/j/1234567892" target="_blank">Join Class</a></td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>10:00 AM - 11:00 AM</td>
-              <td>Advanced Math</td>
-              <td><a href="https://zoom.us/j/1234567893" target="_blank">Join Class</a></td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>11:30 AM - 12:30 PM</td>
-              <td>Biology</td>
-              <td><a href="https://zoom.us/j/1234567894" target="_blank">Join Class</a></td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>10:00 AM - 11:00 AM</td>
-              <td>Physics</td>
-              <td><a href="https://zoom.us/j/1234567895" target="_blank">Join Class</a></td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>10:00 AM - 11:00 AM</td>
-              <td>Advanced Math</td>
-              <td><a href="https://zoom.us/j/1234567896" target="_blank">Join Class</a></td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>11:30 AM - 12:30 PM</td>
-              <td>Biology</td>
-              <td><a href="https://zoom.us/j/1234567897" target="_blank">Join Class</a></td>
-            </tr>
-          </tbody>
-        </table>
-        
-        <!-- Download and View Buttons -->
-        <a href="timetable.pdf" class="btn btn-primary" download="Timetable.pdf">Download Timetable PDF</a>
-        <a href="timetable.pdf" class="btn btn-secondary" target="_blank">View Timetable</a>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2 class="section-title">Timetable for Online Classes</h2>
+          <p>Find the schedule for our Math, Science, and Biology online classes below. You can also download the timetable for offline access or print it directly.</p>
+          
+          <!-- Timetable -->
+          <div class="table-responsive">
+            <table class="timetable table table-bordered">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Subject</th>
+                  <th>Class Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>12:00 PM - 1:30 PM</td>
+                  <td>Advanced Math</td>
+                  <td><a href="https://meet.google.com/uuo-xbpd-tfb" target="_blank" class="btn btn-primary">Join Class</a></td>
+                </tr>
+                <tr>
+                  <td>Monday</td>
+                  <td>1:30 PM - 2:30 PM</td>
+                  <td>Biology</td>
+                  <td><a href="https://meet.google.com/ejx-aaar-fcu" target="_blank" class="btn btn-primary">Join Class</a></td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10:00 AM - 11:00 AM</td>
+                  <td>Physics</td>
+                  <td><a href="https://meet.google.com/xhd-zyug-uia" target="_blank" class="btn btn-primary">Join Class</a></td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>10:00 AM - 11:00 AM</td>
+                  <td>Advanced Math</td>
+                  <td><a href="https://meet.google.com/fvy-zayj-hum" target="_blank" class="btn btn-primary">Join Class</a></td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>11:30 AM - 12:30 PM</td>
+                  <td>Biology</td>
+                  <td><a href="https://meet.google.com/jep-cggi-dka" target="_blank" class="btn btn-primary">Join Class</a></td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>10:00 AM - 11:00 AM</td>
+                  <td>Physics</td>
+                  <td><a href="https://meet.google.com/uvu-ancw-bav" target="_blank" class="btn btn-primary">Join Class</a></td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>10:00 AM - 11:00 AM</td>
+                  <td>Advanced Math</td>
+                  <td><a href="https://meet.google.com/txf-cbdp-evf" target="_blank" class="btn btn-primary">Join Class</a></td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>11:30 AM - 12:30 PM</td>
+                  <td>Biology</td>
+                  <td><a href="https://meet.google.com/txf-cbdp-evf" target="_blank" class="btn btn-primary">Join Class</a></td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          
+          <!-- Download and Print Buttons -->
+          <a href="timetable.pdf" class="btn btn-primary" download="Timetable.pdf">Download Timetable PDF</a>
+          <button class="btn btn-secondary" onclick="window.print()">Print Timetable</button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
+  
+  <!-- Optional Bootstrap CSS -->
+ 
+  
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- aos -->
+  <script src="plugins/aos/aos.js"></script>
+  <!-- venobox popup -->
+  <script src="plugins/venobox/venobox.min.js"></script>
+  <!-- filter -->
+  <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
 </body>
 </html>
