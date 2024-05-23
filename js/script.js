@@ -120,5 +120,12 @@ link.setAttribute('href' ,'tel:+27634414863');
 
 // const forChange = document.querySelector('a');
 
+document.getElementById('whatsappForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    var message = document.getElementById('whatsappMessage').value;
+    var phone = '+27790830984'; // Replace with your phone number including country code
+    var url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + encodeURIComponent(message);
+    window.open(url, '_self');
+  });
 
 
