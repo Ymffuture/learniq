@@ -24,7 +24,7 @@ p, .paragraph {
 
 h1, h2, h3, h4, h5, h6 , b {
   color: #1e1e4b;
-  font-family: "futura-bold";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -199,13 +199,59 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #218083d1;
+  background: linear-gradient(black, rgba(61, 60, 60, 0.228));
   z-index: 999999;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: glow 6s infinite;
 }
 
+@keyframes glow {
+  0%{
+    background: #1a1a37;
+  }
+  35%{
+  
+    background: black;
+  }
+  50%{
+    background: #218083d1;
+  }
+  75%{
+    background: #666767;
+  }
+  100%{
+    background: #1a1a37;
+  }
+  
+}
+
+[src="images/preloader.gif" ]{
+  
+  animation: color 4s infinite;
+}
+
+@keyframes color {
+  0%{
+    filter: grayscale(100);
+  }
+  25%{
+filter: drop-shadow(55);
+transform: scale(1.2);
+  }
+  50%{
+   filter: contrast(50);
+  fill-opacity: .8;
+  }
+  75%{
+    filter: grayscale(100);
+    transform: scale(1.4);
+  }
+  100%{
+    filter: invert(40);
+  }
+}
 ol,
 ul {
   list-style-type: none;
@@ -939,3 +985,55 @@ link:focus,
   color: #217F83;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/* Software Engineering Section Styling */
+.engineering-section {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.engineering-section .text-color {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.engineering-section p {
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.engineering-section .row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+/* Biography Section Styling */
+.col-12 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.col-12 h4 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.col-12 p {
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
