@@ -1268,3 +1268,13 @@ ul .list-group-item {
       font-size: 14px;
   }
 }
+.card-dh{
+  box-shadow: #182b45 2px 8px 4px;
+  transition: .9s ease-in;
+  opacity:.8 ;
+}
+.card-dh:hover{
+
+  opacity:1 ;
+  transform: scale(1.071);
+}
