@@ -1,9 +1,3 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
 
 (function ($) {
 	'use strict';
@@ -129,3 +123,50 @@ document.getElementById('whatsappForm').addEventListener('submit', function(even
   });
 
 
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const loadLink = document.getElementById('customLoadLink');
+    const spinner = document.getElementById('customSpinner');
+
+    loadLink.addEventListener('click', (event) => {
+        event.preventDefault();  // Prevent the default action of the anchor link
+        loadLink.classList.add('disabled');
+        spinner.style.display = 'flex';
+        loadLink.textContent = 'Loading...';
+
+        // Simulate a network request or any async operation
+        setTimeout(() => {
+            spinner.style.display = 'none';
+            loadLink.classList.remove('disabled');
+            loadLink.textContent = 'Apply Now';
+            window.open("https://qkwynvq6.forms.app/learniqform", "_blank");
+        }, 3000); // 3 seconds delay
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loadLinks = document.querySelectorAll('.customLoadLink');
+    const spinner = document.getElementById('customSpinner');
+
+    loadLinks.forEach(loadLink => {
+        loadLink.addEventListener('click', (event) => {
+            event.preventDefault();  // Prevent the default action of the anchor link
+            loadLink.classList.add('disabled');
+            spinner.style.display = 'flex';
+            loadLink.textContent = 'Loading...';
+
+            // Simulate a network request or any async operation
+            setTimeout(() => {
+                spinner.style.display = 'none';
+                loadLink.classList.remove('disabled');
+                loadLink.textContent = 'Apply Now';
+                const url = loadLink.getAttribute('href');
+                window.open(url, "_self");
+            }, 5750); // 3 seconds delay
+        });
+    });
+});
+ 
+  
