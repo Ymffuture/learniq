@@ -105,14 +105,15 @@
 })(jQuery);
 
 
+
+
+
 const link = document.querySelector('a');
 
 console.log(link.getAttribute('href'));
 
 link.setAttribute('href' ,'tel:+27634414863');
 // link.innerText = ' call :+27 634 414 863'
-
-// const forChange = document.querySelector('a');
 
 document.getElementById('whatsappForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
@@ -122,33 +123,19 @@ document.getElementById('whatsappForm').addEventListener('submit', function(even
     window.open(url, '_self');
   });
 
-  const links = document.querySelectorAll('a');
+ 
 
-  links.forEach(link => {
-	  console.log(link.getAttribute('href'));
-	  link.classList.add('customLoadLink');
-  });
-  
-
-  
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
-    const loadLink = document.getElementById('customLoadLink');
-    const spinner = document.getElementById('customSpinner');
+    const links = document.querySelectorAll('a');
+    const wordsToCheck = [
+        'Course Details', 'Teacher\'s profile', 'Download Timetable PDF', 'timetable pre-view',
+        'Online-links', 'payment', 'discord - Class group', 'Privacy Policy', 'Terms and Conditions' ,'Apply now' , 'Event Details' , 'Scholarship' , 'Research' , 'Notice'
+    ];
 
-    loadLink.addEventListener('click', (event) => {
-        event.preventDefault();  // Prevent the default action of the anchor link
-        loadLink.classList.add('disabled');
-        spinner.style.display = 'flex';
-        loadLink.textContent = 'Loading...';
-
-        // Simulate a network request or any async operation
-        setTimeout(() => {
-            spinner.style.display = 'none';
-            loadLink.classList.remove('disabled');
-            loadLink.textContent = 'Apply Now';
-            window.open("https://qkwynvq6.forms.app/learniqform", "_blank");
-        }, 3000); // 3 seconds delay
+    links.forEach(link => {
+        if (wordsToCheck.some(word => link.textContent.includes(word))) {
+            link.classList.add('customLoadLink');
+        }
     });
 });
 
@@ -169,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 spinner.style.display = 'none';
                 loadLink.classList.remove('disabled');
-                loadLink.textContent = 'Apply Now';
+                loadLink.textContent = 'Completed';
                 const url = loadLink.getAttribute('href');
                 window.open(url, "_self");
             }, 5750); // 3 seconds delay
