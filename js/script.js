@@ -105,13 +105,11 @@
 })(jQuery);
 
 
-const link = document.querySelectorAll('a')
-link.forEach(linked => {
-	console.log(link.getAttribute('href'));
-	link.setAttribute('href' ,'tel:+27634414863');
-})
+const link = document.querySelector('a');
 
+console.log(link.getAttribute('href'));
 
+link.setAttribute('href' ,'tel:+27634414863');
 // link.innerText = ' call :+27 634 414 863'
 
 // const forChange = document.querySelector('a');
