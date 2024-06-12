@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('a');
     const wordsToCheck = [
         'Course Details', 'Teacher\'s profile', 'Download Timetable PDF', 'timetable pre-view',
-        'Online-links', 'payment', 'discord - Class group', 'Privacy Policy', 'Terms and Conditions' ,'Apply now' , 'Event Details' , 'Scholarship' , 'Research' , 'Notice'
+        'Online-links', 'payment', 'discord - Class group', 'Privacy Policy', 'Terms and Conditions' ,'Apply now' , 'Event Details' , 'Scholarship' , 'Research' , 'Notice','Send'
     ];
 
     links.forEach(link => {
@@ -149,17 +149,17 @@ document.addEventListener('DOMContentLoaded', () => {
         loadLink.addEventListener('click', (event) => {
             event.preventDefault();  // Prevent the default action of the anchor link
             loadLink.classList.add('disabled');
-            spinner.style.display = 'flex';
+            // spinner.style.display = 'flex';
             loadLink.textContent = 'Loading...';
 
             // Simulate a network request or any async operation
             setTimeout(() => {
-                spinner.style.display = 'none';
+                // spinner.style.display = 'none';
                 loadLink.classList.remove('disabled');
                 loadLink.textContent = 'Completed';
                 const url = loadLink.getAttribute('href');
                 window.open(url, "_self");
-            }, 5750); // 3 seconds delay
+            }, 3750); // 3 seconds delay
         });
     });
 });
