@@ -105,11 +105,13 @@
 })(jQuery);
 
 
-const link = document.querySelector('a');
+const link = document.querySelectorAll('a')
+link.forEach(linked => {
+	console.log(link.getAttribute('href'));
+	link.setAttribute('href' ,'tel:+27634414863');
+})
 
-console.log(link.getAttribute('href'));
 
-link.setAttribute('href' ,'tel:+27634414863');
 // link.innerText = ' call :+27 634 414 863'
 
 // const forChange = document.querySelector('a');
@@ -122,7 +124,15 @@ document.getElementById('whatsappForm').addEventListener('submit', function(even
     window.open(url, '_self');
   });
 
+  const links = document.querySelectorAll('a');
 
+  links.forEach(link => {
+	  console.log(link.getAttribute('href'));
+	  link.classList.add('customLoadLink');
+  });
+  
+
+  
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
     const loadLink = document.getElementById('customLoadLink');
