@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			// Simulate a network request or any async operation
 			setTimeout(() => {
 				loadLink.classList.remove('disabled');
-				// loadLink.innerHTML = 'Completed';
+				loadLink.innerHTML = 'Action complete';
 				const url = loadLink.getAttribute('href');
 				window.open(url, "_self");
 			}, 3750); // 3.75 seconds delay
