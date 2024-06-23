@@ -534,13 +534,14 @@ textarea.form-control {
 }
 @media (max-width: 991px) {
   .navigation {
-    background: #646cff;
+    background: #1a1a1a;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: #646cff;
+    background: #1a1a1a;
     max-height: calc(100vh - 80px);
   }
   .navbar-collapse.show {
