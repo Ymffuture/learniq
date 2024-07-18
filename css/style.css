@@ -355,7 +355,7 @@ a h4:hover {
   width: 100%;
   top: 0;
   left: 0;
-  background: #ffff;
+  background: #00000083;
   opacity: 0.8;
 }
 
@@ -815,7 +815,7 @@ link:focus,
   overflow: hidden;
   height: 10px;
   width: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(206, 17, 17, 0.5);
   border: 0;
   outline: 0;
 }
@@ -940,7 +940,7 @@ link:focus,
   width: 80px;
   border-radius: 50%;
   background: #646cff;
-  color: #fff;
+  color: #00041d;
   font-size: 20px;
   text-align: center;
 }
@@ -953,7 +953,7 @@ link:focus,
   height: 0;
   width: 0;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: #73ff00;
   border-radius: 50%;
   top: 50%;
   left: 50%;
