@@ -11,8 +11,8 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: #1a1a1a;
-  background: #1a1a1a !important;
+  color: #ffff;
+  background: #ffff !important;
 }
 
 p, .paragraph {
@@ -355,7 +355,7 @@ a h4:hover {
   width: 100%;
   top: 0;
   left: 0;
-  background: #1a1a1a;
+  background: #ffff;
   opacity: 0.8;
 }
 
@@ -376,7 +376,7 @@ a h4:hover {
 }
 
 .bg-gray {
-  background: #1a1a1a;
+  background: #ffff;
 }
 
 .text-primary {
@@ -534,14 +534,14 @@ textarea.form-control {
 }
 @media (max-width: 991px) {
   .navigation {
-    background: #1a1a1a;
+    background: #ffff;
     font-size: 18px;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: #1a1a1a;
+    background: #ffff;
     max-height: calc(100vh - 80px);
   }
   .navbar-collapse.show {
@@ -561,7 +561,7 @@ textarea.form-control {
 }
 
 .nav-bg {
-  background-color: #1a1a1a;
+  background-color: #000000;
 }
 
 .nav-item {
@@ -584,7 +584,7 @@ textarea.form-control {
   height: 6px;
   width: 100%;
   content: "";
-  background: #fff;
+  background: #0a0a0a;
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.3s ease;
@@ -602,19 +602,19 @@ textarea.form-control {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+  color: #111111;
 }
 
 link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
+  color: #1a1818;
 }
 
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show > .nav-link {
-  color: #fff;
+  color: #000c1d;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -631,7 +631,7 @@ link:focus,
   top: 0;
   width: 100%;
   z-index: 10;
-  background: #1a1a1a;
+  background: #080808;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0509803922);
 }
 
@@ -679,8 +679,8 @@ link:focus,
   transition: 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
-  background: #1a1a1a;
-  color: #646cff !important;
+  background: #f0f1ff;
+  color: #00011d !important;
 }
 @media (max-width: 991px) {
   .navbar .dropdown-menu {
@@ -1058,7 +1058,7 @@ link:focus,
 }
 
 .bg-footer {
-  background-color: #1a1a1a;
+  background-color: #ffff;
   color: #646cff;
 }
 
