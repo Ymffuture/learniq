@@ -53,9 +53,9 @@
 
 <body>
   <!-- preloader start -->
-   <!-- <div class="preloader" title="Loading...">
+   <div class="preloader" title="Loading...">
     <img src="images/nun.gif" width="50%" alt="preloader" title="Please wait...">
-  </div>  -->
+  </div> 
   
   <!-- preloader end -->
   
@@ -278,8 +278,43 @@
           <p>Get the detailed timetable for our tutoring sessions in advance mathematics and software engineering.</p>
           <a href="Timetable.pdf" class=" btn btn-primary mb-2" download="LearnIQ_Timetable.pdf">Download Timetable PDF</a>
           <a href="timetable.html" class="btn btn-secondary mb-2" target="_blank">View Timetable</a>
+
+         
         </div>
       </div>
+      <style>
+        /* Hide scrollbar for the iframe */
+        iframe {
+          overflow: hidden;
+          border: none;
+          width: 100%;
+          height: 786px;
+          -webkit-overflow-scrolling: none;
+        }
+        /* Styling for the remove button */
+        .remove-button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #007BFF;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+      </style>
+      <iframe src="https://w4weatherapp.tiiny.site" id="myIframe" allowfullscreen></iframe>
+  
+      <!-- Button to remove the iFrame -->
+      <button class="remove-button" onclick="removeIframe()">Remove iFrame</button>
+
+      <script>
+        // JavaScript function to remove the iFrame
+        function removeIframe() {
+          var iframe = document.getElementById('myIframe');
+          iframe.parentNode.removeChild(iframe);
+        }
+      </script>
     </div>
   </section>
 </section>
